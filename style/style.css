@@ -1,4 +1,19 @@
-/* colors that i can use again */
+/* reussables */
+
+.flex-row-wrap-evenly-centre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-wrap-row-evenly{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 .salmon{
     color: #FFB4D3;
@@ -38,11 +53,6 @@ body {
 }
 
 nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
     height: 8vh;
     position: sticky;
     top: 0;
@@ -50,8 +60,8 @@ nav{
 }
 
 .links{
-    display: flex;
     width: 33%;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
@@ -62,13 +72,9 @@ nav{
 }
 
 .midden{
-   height: 8vh;
     display: flex;
     width: 33%;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    height: 8vh;
 }
 
 .midden div{
@@ -90,7 +96,7 @@ nav{
 }
 
 .midden div:hover{
-background-color: #ffffffa3;
+    background-color: #ffffffa3;
 }
 
 .rechts{
@@ -244,14 +250,7 @@ main {
     font-size: 15px;
 }
 
-.learn-middle-buttons-top{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.learn-middle-button-bottom{
+.flex-wrap-row-evenly{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -350,7 +349,7 @@ main {
 }
 
 .spacing{
-    height: 100px;
+    height: 50px;
 }
 
 .learn-button-cards{
@@ -405,4 +404,24 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.about-people-cards img{
+    height: 17%;
+    width: 17%;
+}
+
+.about-people-subtext{
+    color: white;
+    text-align: center;
+}
+
+.about-people-subtext p{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.about-people-subtext img{
+
 }

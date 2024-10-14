@@ -15,6 +15,22 @@
     justify-content: space-evenly;
 }
 
+.flex-wrap-column-evenly-center{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lato{
+    font-family: "Lato", sans-serif;
+}
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+}
+
 .salmon{
     color: #FFB4D3;
 }
@@ -153,10 +169,8 @@ main {
 
 .title-text h1{
     color: #ffffff;
-    font-family: "Lato", sans-serif;
     font-size: 72px;
     font-weight: bold;
-    
 }
 
 .title-subtext{
@@ -225,7 +239,6 @@ main {
 
 .learn-top h1{
     color: #E5E5E5;
-    font-family: "Lato", sans-serif;
     font-size: 54px;
     font-weight: bold;
 }
@@ -302,21 +315,18 @@ main {
     color: #37424D;
     font-weight: bold;
     font-size: 54px;
-    font-family: "Lato", sans-serif;
 }
 
 .learn-middle-text-white{
     color: white;
     font-weight: bold;
     font-size: 54px;
-    font-family: "Lato", sans-serif;
 }
 
 .learn-middle-text-pink{
     color: #FFB4D3;
     font-weight: bold;
     font-size: 54px;
-    font-family: "Lato", sans-serif;
 }
 
 .two-stars-learn{
@@ -334,7 +344,6 @@ main {
     width: 100%;
     align-content: center;
     align-items: center;
-    font-family: "Lato", sans-serif;
     font-weight: bold;
     color: white;
     font-size: 54px;
@@ -351,6 +360,7 @@ main {
 .spacing{
     height: 50px;
 }
+
 
 .learn-button-cards{
     display: flex;
@@ -417,11 +427,59 @@ main {
 }
 
 .about-people-subtext p{
-    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 40px;
 }
 
-.about-people-subtext img{
+.about-weekly{
+    background-color: #121E28;
+    border: #2A3744;
+    border-radius: 10px;
+    border-style: solid;
+    width: 100%;
+    height: 390px;
+}
+
+.about-weekly-title{
+    color: white;
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.about-weekly-subtext{
+    color: #9AAFC3;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.about-weekly-form{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+#weekly-email-input{
+    border-color: #2A3744;
+    border-radius: 2px;
+    border-style: solid;
+    background-color: #121E28;
+    color: white;
+    width: 450px;
+    height: 65px;
+    border-radius: 10px;
+}
+
+#weekly-email-input:focus{
+    border-style: none;
+}
+
+#weekly-email-button{
+    background-color: #CEAAFF;
+    width: 170px;
+    height: 65px;
+    border-radius: 10px;
+
 
 }

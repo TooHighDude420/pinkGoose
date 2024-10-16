@@ -434,10 +434,16 @@ main {
 .about-weekly{
     background-color: #121E28;
     border: #2A3744;
-    border-radius: 10px;
+    border-radius: 30px;
     border-style: solid;
     width: 100%;
-    height: 390px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-width: 2px;
+    align-items: center;
 }
 
 .about-weekly-title{
@@ -454,9 +460,11 @@ main {
 
 .about-weekly-form{
     display: flex;
-    width: 80%;
-    flex-wrap: wrap;
+    width: 101%;
+    flex-wrap: nowrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -467,8 +475,8 @@ main {
     background-color: #121E28;
     color: white;
     width: 450px;
-    height: 65px;
-    border-radius: 10px;
+    height: 50px;
+    border-radius: 15px;
 }
 
 #weekly-email-input:focus{
@@ -478,8 +486,181 @@ main {
 #weekly-email-button{
     background-color: #CEAAFF;
     width: 170px;
-    height: 65px;
+    height: 54px;
+    border-radius: 12px;
+}
+
+.about-press{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+}
+
+.about-press-title{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-press-card{
+    width: 28%;
+    height: 30vh;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-press-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-press-cards h1{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.about-press-cards p{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.about-press-cards img{
+    height: 30px;
+}
+
+.about-press-card-decrypt{
+    background-color: #77E6FF;
+    padding: 15px;
+}
+
+.about-press-card-blockworks{
+    background-color: #E2C1F9;
+    padding: 15px;
+}
+
+.about-press-card-techcrunch{
+    background-color: #DBE268;
+    padding: 15px;
+}
+
+.about-press-cards-subtext{
+    display: flex;
+    align-items: center;
+}
+
+.about-press-cards-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 91%;
+    justify-content: space-between;
+}
+
+.about-podcasts-title{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-podcasts-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-podcasts-cards h1{
+    color:white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.about-podcasts-cards p{
+    color: #E2E2E2;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.about-podcasts-cards img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.about-podcast-card{
+    background-color: #2A3744;
+    border-style: solid;
     border-radius: 10px;
+    border-color: grey;
+    border-width: 2px;
+    width: 28%;
+    height: 30vh;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+}
 
+.about-podcasts-subtext{
+    display: flex;
+    align-items: center;
+}
 
+.about-podcasts-subtext img{
+    height: unset;
+    width: unset;
+    /* alleen gedaan omdat de afbeelding
+        een rare vorm heeft */
+    position: relative;
+    top: 4px;
+}
+
+.about-podcasts-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 91%;
+    justify-content: space-between;
+}
+
+.footer-content{
+    background-color: #121E28;
+    height: 168px;
+    justify-content: center;
+}
+
+.footer-links{
+    display: flex;
+    width: 25%;
+    height: 8vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.footer-links div{
+    color: white;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    align-content: center;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-links div a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-buttons{
+    width: 20%;
 }

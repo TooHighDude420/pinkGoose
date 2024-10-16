@@ -664,3 +664,92 @@ main {
 .footer-buttons{
     width: 20%;
 }
+
+/* content pagina */
+.contact-top{    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-top-text h1{
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.contact-top-text p{
+    color: #5A6C7E;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.content-top-cards img{
+    height: 52px;
+    width: 52px;
+}
+
+.content-top-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.content-card-telegram{
+    background-color: #FFC803;
+    display: flex;
+    justify-content: space-around;
+    width: 280px;
+    height: 84px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.content-card-email{
+    background-color: #E2C1F9;
+    display: flex;
+    justify-content: space-around;
+    width: 280px;
+    height: 84px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h1{
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.norm{
+    height: 68px;
+    background-color: #2A3744;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.bigger{
+    height: 310px;
+    border-style: solid;
+    background-color: #2A3744;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.bigger::placeholder{
+    
+    text-align: left;
+}

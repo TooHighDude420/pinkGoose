@@ -31,6 +31,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.white{
+    color: white;
+}
+
 .salmon{
     color: #FFB4D3;
 }
@@ -59,6 +63,8 @@
     color: #707F8D;
 }
 
+/* setup */
+
 *{
     margin: 0;
     padding: 0;
@@ -67,6 +73,8 @@
 body {
     background-color: #0a1117;
 }
+
+/* navbar */
 
 nav{
     height: 8vh;
@@ -143,6 +151,8 @@ nav{
     font-size: 20px;
 }
 
+/* main content */
+
 main {
     display: flex;
     flex-direction: column;
@@ -153,6 +163,8 @@ main {
 .centre-content{
     width: 50%;
 }
+
+/* home */
 
 .title-content{
     display: flex;
@@ -215,6 +227,8 @@ main {
     height: 21px;
     width: 20.5px;
 }
+
+/* learn */
 
 .learn-content{   
     display: flex;
@@ -396,6 +410,8 @@ main {
     font-weight: 600;
     font-size: 22px;
 }
+
+/* about */
 
 .about-content{
     display: flex;
@@ -672,18 +688,22 @@ main {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    width: 50%;
+}
+
+.contact-top-text{
+    font-weight: 700;
+    text-align: center;
 }
 
 .contact-top-text h1{
     color: white;
     font-size: 54px;
-    font-weight: 700;
 }
 
 .contact-top-text p{
     color: #5A6C7E;
     font-size: 48px;
-    font-weight: 700;
 }
 
 .content-top-cards img{
@@ -697,29 +717,59 @@ main {
     width: 80%;
 }
 
-.content-card-telegram{
-    background-color: #FFC803;
+.content-top-cards .logo{
+    padding-left: 20px;
+}
+
+.content-top-cards .text{
+    padding-left: 20px;
+}
+
+.content-top-cards .titlw{
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.content-top-cards .subtext{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.content-card{
+    display: flex;
+    justify-content: flex-start;
     width: 280px;
     height: 84px;
     align-items: center;
     border-radius: 10px;
 }
 
+.content-card-telegram{
+    background-color: #FFC803;
+}
+
 .content-card-email{
     background-color: #E2C1F9;
-    display: flex;
-    justify-content: space-around;
-    width: 280px;
-    height: 84px;
-    align-items: center;
-    border-radius: 10px;
+}
+
+.content-common{
+    border: #2A3744;
+    background-color: #121E28;
+    border-width: 2px;
+    border-style: solid;
+    width: 100%;
 }
 
 .contact-form{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    height: 110vh;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 20px;
 }
 
 .contact-form h1{
@@ -731,25 +781,46 @@ main {
 form{
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
 .norm{
     height: 68px;
-    background-color: #2A3744;
-    border-style: solid;
-    border-radius: 15px;
     margin: 5px;
+    font-size: 20px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 15px;
+}
+
+.norm-o{
+    color:#3D4C5B;
+    width: 102%;
+}
+
+.norm::placeholder{
+    color: #3D4C5B;
 }
 
 .bigger{
-    height: 310px;
-    border-style: solid;
-    background-color: #2A3744;
-    border-radius: 15px;
-    margin: 5px;
+    height: 200px;
+    font-weight: 500;
+    padding-top: 15px;
+    width: 100%;
 }
 
 .bigger::placeholder{
-    
-    text-align: left;
+    color: #3D4C5B;
+}
+
+.contact-button{
+    width: 175px;
+    height: 68px;
+    background-color: #CEAAFF;
+    border-radius: 15px;
+    margin-top: 15px;
+    position: relative;
+    left: 90%;
+    font-weight: 600;
+    font-size: 20px;
 }

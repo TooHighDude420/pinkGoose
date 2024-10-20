@@ -2,25 +2,27 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pink-Goose</title>
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="img/Screenshot_2024-10-10_094955-removebg-preview.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink-Goose</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/Screenshot_2024-10-10_094955-removebg-preview.png">
+</head>
 
-    <body>
-        <header>
-
-        </header>
+<body>
+    <header>
         <section>
+            <!-- navbar with logo and links plus a login button -->
             <nav class="flex-row-wrap-evenly-centre">
                 <div class="links">
-                <a href="index.html"><img src="img/logo.png"></a> 
+                    <a href="index.html"><img src="img/logo.png"></a>
                 </div>
                 <div class="midden flex-row-wrap-evenly-centre">
                     <div><a href="index.html">Home</a></div>
@@ -33,79 +35,74 @@
                 </div>
             </nav>
         </section>
+    </header>
     
-        <main>
 
-            <div class="spacing"></div>
-            
-            <section class="contact-top">
-                <div class="contact-top-text lato">
-                    <h1>What's your GOOSE idea?</h1>
-                    <br>
-                    <p>Let’s chat and see how we can help</p>
+    <main>
+        <section class="contact-top">
+            <!-- contact title and subtext -->
+            <div class="contact-top-text lato">
+                <h1>What's your GOOSE idea?</h1>
+                <p>Let’s chat and see how we can help</p>
+            </div>
+
+
+            <!-- contact telegram and email cards -->
+            <div class="content-top-cards montserrat">
+                <div class="content-card content-card-telegram">
+                    <div class="logo">
+                        <img src="img/contact-telegram.png" alt="contact-telegram">
+                    </div>
+                    <div class="text">
+                        <div class="titlw">
+                            <h1>Telegram</h1>
+                        </div>
+                        <div class="subtext">
+                            <p>@superdao_team</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="spacing"></div>
 
-                <section class="content-top-cards montserrat">
-                    <div class="content-card content-card-telegram">
-                        <div class="logo">
-                            <img src="img/contactTelegram.png" alt="contact-telegram">
+                <div class="content-card-email content-card">
+                    <div class="logo">
+                        <img src="img/contact-email.png" alt="contact-email">
+                    </div>
+                    <div class="text">
+                        <div class="titlw">
+                            <h1>Email</h1>
                         </div>
-                        <div class="text">
-                            <div class="titlw">
-                                <h1>Telegram</h1>
-                            </div>
-                            <div class="subtext">
-                                <p>@superdao_team</p>
-                            </div>
+                        <div class="subtext">
+                            hello@superdao.com
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="content-card-email content-card">
-                        <div class="logo">
-                            <img src="img/contactEmail.png" alt="contact-email">
-                        </div>
-                        <div class="text">
-                            <div class="titlw">
-                                <h1>Email</h1>
-                            </div>
-                            <div class="subtext">
-                                hello@superdao.com
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="spacing"></div>
-                
-                <section class="contact-form content-common lato">
-                    <h1>Send a post Goose</h1>
-                    <br>
-                    <form class="montserrat">
-                        <input type="email" name="email" placeholder="Your email" class="norm content-common">
-                        <br>
-                        <input type="text" name="name" placeholder="Your name" class="norm content-common">
-                        <br>
-                        <textarea type="text" name="message" placeholder="Your message" class="norm bigger content-common montserrat"></textarea>
-                        <br>
-                        <select name="color" class="norm-o norm content-common">
-                            <option value="" disabled selected>Color of your goose</option>
-                            <option value="red">Red</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <input class="contact-button montserrat" type="submit" value="Send">
-                    </form>
-                </section>
-
-                <div class="spacing"></div>
-            
+            <!-- contact form -->
+            <section class="contact-form content-common lato">
+                <h1>Send a post Goose</h1>
+                <form class="montserrat">
+                    <input type="email" name="email" placeholder="Your email" class="norm content-common">
+                    <input type="text" name="name" placeholder="Your name" class="norm content-common">
+                    <textarea type="text" name="message" placeholder="Your message" class="norm bigger content-common montserrat"></textarea>
+                    <select name="color" class="norm-o norm content-common">
+                        <option value="" disabled selected>Color of your goose</option>
+                        <option value="red">Red</option>
+                        <option value="white">White</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                    </select>
+                    <input class="contact-button montserrat" type="submit" value="Send">
+                </form>
             </section>
-        </main>
-        
-        <footer class="flex-row-wrap-evenly-centre footer-content">
+
+
+        </section>
+    </main>
+
+<section>
+     <!-- footer with links and socials buttons -->
+     <footer class="flex-row-wrap-evenly-centre footer-content">
         <div class="footer-links montserrat">
             <div><a href="">About</a></div>
             <div><a href="">Legal</a></div>
@@ -115,9 +112,12 @@
             <div><img src="img/twitter.png" alt="twitter-logo"></div>
             <div><img src="img/telegram.png" alt="telegram-logo"></div>
             <div><img src="img/youtube.png" alt="youtube-logo"></div>
-            <div><img src="img/discord_1 1.png" alt="discord-logo"></div>
+            <div><img src="img/discord.png" alt="discord-logo"></div>
         </div>
-        
-        </footer>
-    </body>
+
+    </footer>
+</section>
+    
+</body>
+
 </html

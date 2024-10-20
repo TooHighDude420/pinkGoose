@@ -7,8 +7,11 @@
     <title>Pink-Goose</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/Screenshot_2024-10-10_094955-removebg-preview.png">
 </head>
 
@@ -16,22 +19,18 @@
     lijn 203 nog verkeerde lettertype
     lijn 64 & 65 zitten 2 legen divs??
     lijn 115 de sterren moeten nog omhoog
-    de lato texten zijn er raar komen uitzien
-    src bij de plaatjes zetten
     sections maken
     see all toevoeggen bij posdcasts en press
-
+    margin vervangen met flex: gap
 -->
 
 
 <body>
     <header>
-
-    </header>
-    <section>
+        <!-- navbar with logo and links plus a login button -->
         <nav class="flex-row-wrap-evenly-centre">
             <div class="links">
-               <a href="index.html"><img src="img/logo.png"></a> 
+                <a href="index.html"><img src="img/logo.png" alt="pinkgoose"></a>
             </div>
             <div class="midden flex-row-wrap-evenly-centre">
                 <div><a href="index.html">Home</a></div>
@@ -43,34 +42,34 @@
                 <div><a href="google.com">Login</a></div>
             </div>
         </nav>
-    </section>
-   
+    </header>
+
     <main>
         <section class="centre-content">
-            <section>
-                <div class="title-content">
-                    <div class="title-text lato">
-                        <h1>The easiest way <br> to start a Goose</h1>
-                    </div>
-                    <div class="title-subtext">
-                        <p1>An all-in-one platform to start, manage and grow <br> a decentralized autonomous organization</p1>
-                    </div>
-                    <div class="get-started-button">
-                        <div>
-                            Get started
-                        </div>
-                    </div>
-                    <div class="arrow-title">
-                        <img src="img/arrows.png">
+            <!-- home title text and subtext with get started button -->
+            <section class="title-content home-common">
+                <div class="title-text home-padding lato white">
+                    <h1>The easiest way <br> to start a Goose</h1>
+                </div>
+                <div class="title-subtext home-padding montserrat white">
+                    <p>An all-in-one platform to start, manage and grow <br> a decentralized autonomous organization</p>
+                </div>
+                <div class="get-started-button home-padding purple-buttons common-home">
+                    <div>
+                        Get started
                     </div>
                 </div>
+                <div class="arrow-title common-home">
+                    <img src="img/arrows.png" alt="arrow-down">
+                </div>
             </section>
-            
+
+            <!-- learn title and buttons-->
             <section>
-                <div id="Learn" class="learn-content">
-                    <div class="learn-top lato">
+                <div id="Learn" class="learn-content learn-common">
+                    <div class="learn-top learn-common white lato">
                         <div>
-                            <img class="stars-learn" src="img/stars.png">
+                            <img class="stars-learn" src="img/stars.png" alt="stars-learn">
                         </div>
                         <div>
                             <h1>Ready for every project</h1>
@@ -78,119 +77,126 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="flex-wrap-row-evenly">
-                        <div class="learn-middle-buttons">
+                    <div class="learn-flex learn-common montserrat">
+                        <div class="learn-middle-buttons learn-common">
                             <div class="salmon">
                                 Investment DAO
                             </div>
                         </div>
-                        <div class="learn-middle-buttons">
-                            <div class="yellow">   
+                        <div class="learn-middle-buttons learn-common">
+                            <div class="yellow">
                                 Startup DAO
                             </div>
                         </div>
-                        <div class="learn-middle-buttons">
+                        <div class="learn-middle-buttons learn-common">
                             <div class="purple">
                                 Service DAO
                             </div>
                         </div>
-                        <div class="learn-middle-buttons">
+                        <div class="learn-middle-buttons learn-common">
                             <div class="blue">
                                 Community DAO
                             </div>
                         </div>
                     </div>
-                    <div class="flex-wrap-row-evenly">
-                        <div class="learn-middle-buttons">
+
+                    <div class="learn-flex learn-common montserrat">
+                        <div class="learn-middle-buttons learn-common">
                             <div class="dark-bleu">
                                 Impact DAO
                             </div>
                         </div>
-                        <div class="learn-middle-buttons">
+                        <div class="learn-middle-buttons learn-common">
                             <div class="beige">
                                 DeFi DAO
                             </div>
                         </div>
-                        <div class="learn-middle-buttons">
+                        <div class="learn-middle-buttons learn-common">
                             <div class="grey">
-                                <img src="img/plus.png">
-                                    More
+                                <img src="img/plus.png" alt="greyplus">
+                                More
                             </div>
                         </div>
                     </div>
-                    <div class="learn-bottom">
+
+                    <!--learn big text describing services -->
+
+                    <div class="learn-bottom learn-common">
                         <div>
-                            <img src="img/blocks.png">
+                            <img src="img/blocks.png" alt="lears-blocks">
                         </div>
-                        <div class="img-undertitle">
+                        <div class="img-undertitle learn-common montserrat">
                             1000+ projects launched on Superdao
                         </div>
-                        <img src="img/two-stars.png" class="two-stars-learn">
+                        <img src="img/two-stars.png" class="two-stars-learn" alt="two-stars-learn">
                     </div>
-                    <div class="learn-middle lato">
-                        <div class="learn-middle-text-white">
+                    <div class="learn-middle learn-common lato">
+                        <div class="learn-middle-text white">
                             Designed for the full journey
                         </div>
-                        <div class="learn-middle-text">
+                        <div class="learn-middle-text grayish-text">
                             Organisation design
                         </div>
-                        <div class="learn-middle-text">
+                        <div class="learn-middle-text grayish-text">
                             Smart contract development
                         </div>
-                        <div class="learn-middle-text">
+                        <div class="learn-middle-text grayish-text">
                             Fundraising
                         </div>
-                        <div class="learn-middle-text-pink">
+                        <div class="learn-middle-text salmon">
                             Launch marketing
                         </div>
-                        <div class="learn-middle-text">
+                        <div class="learn-middle-text grayish-text">
                             Member onboarding
                         </div>
-                        <div class="learn-middle-text">
+                        <div class="learn-middle-text grayish-text">
                             Contributor management
                         </div>
-                        <div class="learn-middle-text">
+                        <div class="learn-middle-text grayish-text">
                             GOOSE operations
                         </div>
                     </div>
-                    <div class="spacing"></div>
-                    <div class="spacing"></div>
-                    <div class="learn-middle-bottom lato">
-                        <img src="img/bleuOrangeStars.png">
-                            Works with
-                        <img src="img/yellowPurpleStars.png">
+                    
+                    <!--works with title and cards showing compatibility -->
+                <section>
+                    
+                </section>    
+                    <div class="learn-middle-bottom learn-common lato">
+                        <img src="img/bleu-orange-stars.png" alt="bleu-orange-stars">
+                            Works with  
+                        <img src="img/yellow-purple-stars.png" alt="yellow-purple-stars">
                     </div>
-                    <div class="learn-button-cards">
-                        
+                    <div class="learn-button-cards learn-common">
+
                         <div class="learn-button-card">
                             <div class="learn-button-card-ether">
-                                <img src="img/ether.png">
-                            </div> 
+                                <img src="img/ether.png" alt="ether">
+                            </div>
                             <p>Ethereum</p>
                         </div>
-                        
+
 
                         <div class="learn-button-card">
                             <div class="learn-button-card-poly">
-                                <img src="img/poly.png">
+                                <img src="img/poly.png" alt="poly">
                             </div>
                             <div>
                                 <p>Polygon</p>
                             </div>
                         </div>
-                        
+
 
                         <div class="learn-button-card">
                             <div class="learn-button-card-gnosis">
-                                <img src="img/gnosis.png">
+                                <img src="img/gnosis.png" alt="gnosis">
                             </div>
                             <p>Gnosis Safe</p>
                         </div>
-                        
+
 
                         <div class="learn-button-card">
                             <div class="learn-button-card-snap">
-                                <img src="img/snap.png">
+                                <img src="img/snap.png" alt="snap">
                             </div>
                             <p>Snapshot</p>
                         </div>
@@ -198,63 +204,62 @@
 
                         <div class="learn-button-card">
                             <div class="learn-button-card-ens">
-                                <img src="img/ens.png">
+                                <img src="img/ens.png" alt="ens">
                             </div>
-                            <p>ENS</p>                            
+                            <p>ENS</p>
                         </div>
                         <div class="learn-button-card">
                             <div class="learn-button-card-openSea">
-                                <img src="img/open.png">
+                                <img src="img/open.png" alt="open">
                             </div>
                             <p>OpenSea</p>
                         </div>
                     </div>
+                </div>
             </section>
-                
-                <div class="spacing"></div>
-                <div class="spacing"></div>
 
+
+            <!-- about title and manager cards with subtext -->
             <section class="about-content">
                 <div class="about-top-title">
                     <h1>Help at ervery step</h1>
                 </div>
-                <div class="spacing"></div>
                 <div class="about-people-cards">
-                    <img src="img/Guy1.png">
-                    <img src="img/Wom2.png">
-                    <img src="img/Guy3.png">
-                    <img src="img/Wom4.png">
-                    <img src="img/Wom5.png">
+                    <img src="img/guy1.png" alt="guy1">
+                    <img src="img/wom2.png" alt="wom2">
+                    <img src="img/guy3.png" alt="guy3">
+                    <img src="img/wom4.png" alt="wom4">
+                    <img src="img/wom5.png" alt="wom5">
                 </div>
-                <div class="spacing"></div>
                 <div class="about-people-subtext lato">
                     <p>
                         Succes managers
-                        <img src="img/blueStar.png"> 
+                        <img src="img/blue-star.png" alt="blue-star">
                         Knowledge base
                     </p>
-                    <br>
+
                     <p>
                         Chat support
-                        <img src="img/purpleStar.png">
-                        Tutorials 
-                        <img src="img/yellowStar.png">
+                        <img src="img/purple-star.png" alt="purple-star">
+                        Tutorials
+                        <img src="img/yellow-star.png" alt="yellow-star">
                         Templates
                     </p>
-                    <br>
+
                     <p>
                         Smart Control development
-                        <img src="img/orangeStar.png"> 
+                        <img src="img/orange-star.png" alt="orange-star">
                         Events
                     </p>
-                    <br>
+
                     <p>
                         Education
-                        <img src="img/lightYellowStar.png">
+                        <img src="img/light-yellow-star.png" alt="light-yellow-star">
                         Guides
                     </p>
                 </div>
-                <div class="spacing"></div>
+                
+                <!-- newsletter subscribtion box -->
                 <div class="about-weekly">
                     <div class="about-weekly-title lato">
                         Weekly digest
@@ -262,7 +267,7 @@
                     <div class="about-weekly-subtext montserrat">
                         Latest news in DAOs and Web3
                     </div>
-                    <div >
+                    <div>
                         <form action="" class="about-weekly-form">
                             <input type="email" name="email-weekly" id="weekly-email-input">
                             <input type="button" value="Subscribe" id="weekly-email-button">
@@ -270,123 +275,124 @@
                     </div>
                 </div>
 
-                <div class="spacing"></div>
-
-                <div class="about-press-title lato">
-                    <h1>Press</h1>
-                </div>
-
-                <div class="about-press">
-                    <div class="about-press-cards">
-                        <div class="about-press-card-decrypt about-press-card">
-                            
-                            <img src="img/decryptlogo.png">
-                            <div class="about-press-cards-content">
-                                <h1>Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform</h1>
-                                <p>Superdao aims to make it easier for online communities to build and launch DAOs</p>
-                                <div class="about-press-cards-subtext">
-                                    <p>Read more</p>
-                                    <img src="img/greyArrow.png" alt="greyArrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-press-card-blockworks about-press-card">
-                
-                            <img src="img/blockworkslogo.png">            
-                            <div class="about-press-cards-content">
-                                <h1>The Y Combinator of Web3 Attracts Record Number of DAO Startups</h1>
-                                <p>DAOs and related startups made up an “overwhelming number of applicants” for a Web3 accelerator’s cohort this year</p>
-                                <div class="about-press-cards-subtext">
-                                    <p>Read more</p>
-                                    <img src="img/greyArrow.png" alt="greyArrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-press-card-techcrunch about-press-card">
-                            <img src="img/techcrunchlogo.png">
-
-                            <div class="about-press-cards-content">
-                                <h1>VC-backed DAO startups are racing to define what DAOs actually are</h1>
-                                <p>Not all 'decentralized autonomous organizations' are autonomous... or decentralized</p>
-                            
-                                <div class="about-press-cards-subtext">
-                                    <p>Read more</p>
-                                    <img src="img/greyArrow.png" alt="greyArrow">
-                                </div>
-                            </div>
-                        </div>
+                <!-- press title and cards showing news -->
+                <section>
+                    <div class="about-press-title lato">
+                        <h1>Press</h1>
                     </div>
-                </div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="about-podcasts-title lato">
-                    <h1>Podcasts</h1>
-                </div>
-                <div class="about-podcasts">
-                    <div class="about-podcasts-cards">
-                        <div class="about-podcasts-card-pump about-podcast-card">
-                            <div class="about-podcasts-content">
-                                <img src="img/pump.png" alt="pumpLogo">
-                                <h1>Understanding DAOs with Yury Lifshits</h1>
-                                <p>The Pomp Podcast<br>by Anthony Pompliano</p>
-                                <div class="about-podcasts-subtext">
-                                    <p>Listen</p>
-                                    <img src="img/whiteArrow.png" alt="whiteArrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-podcasts-card-unstopable about-podcast-card">
-                            <div class="about-podcasts-content">
-                                <img src="img/unstopable.png" alt="unstoppableLogo">
-                                <h1>Everything You Need to Know About DAOs with Yury Lifshits from Superdao</h1>
-                                <p>The Unstoppable Podcast<br>by Josh Gordon</p>
-                                <div class="about-podcasts-subtext">
-                                    <p>Watch</p>
-                                    <img src="img/whiteArrow.png" alt="whiteArrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-podcasts-card-zima about-podcast-card">
-                            <div class="about-podcasts-content">
-                                <img src="img/zima.png" alt="zimaLogo">
-                                <h1>Yury Lifshits - Superdao: The “Shopify” for DAOs</h1>
-                                <p>Zima Red<br>by Andrew Stainwold</p>
-                                <div class="about-podcasts-subtext">
-                                    <p>Listen</p>
-                                    <img src="img/whiteArrow.png" alt="whiteArrow">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="spacing"></div>
-        </section>
-        <div class="centre-content">
-            
-        </div>
-    </div>
-</div>
-</main>
-
-<footer class="flex-row-wrap-evenly-centre footer-content">
-    <div class="footer-links montserrat">
-        <div><a href="">About</a></div>
-        <div><a href="">Legal</a></div>
-        <div><a href="">Jobs</a></div>
-    </div>
-    <div class="footer-buttons flex-row-wrap-evenly-centre">
-        <div><img src="img/twitter.png" alt="twitter-logo"></div>
-        <div><img src="img/telegram.png" alt="telegram-logo"></div>
-        <div><img src="img/youtube.png" alt="youtube-logo"></div>
-        <div><img src="img/discord_1 1.png" alt="discord-logo"></div>
-    </div>
     
-</footer>
+                    <div class="about-press">
+                        <div class="about-press-cards">
+                            <div class="about-press-card-decrypt about-press-card">
+    
+                                <img src="img/decrypt-logo.png" alt="decrypt-logo">
+                                <div class="about-press-cards-content">
+                                    <h1>Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform</h1>
+                                    <p>Superdao aims to make it easier for online communities to build and launch DAOs</p>
+                                    <div class="about-press-cards-subtext">
+                                        <p>Read more</p>
+                                        <img src="img/grey-arrow.png" alt="greyArrow">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="about-press-card-blockworks about-press-card">
+    
+                                <img src="img/blockworks-logo.png" alt="blockworks-logo">
+                                <div class="about-press-cards-content">
+                                    <h1>The Y Combinator of Web3 Attracts Record Number of DAO Startups</h1>
+                                    <p>DAOs and related startups made up an “overwhelming number of applicants” for a Web3
+                                        accelerator’s cohort this year</p>
+                                    <div class="about-press-cards-subtext">
+                                        <p>Read more</p>
+                                        <img src="img/grey-arrow.png" alt="greyArrow">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="about-press-card-techcrunch about-press-card">
+                                <img src="img/techcrunch-logo.png" alt="techcrunch-logo">
+                                <div class="about-press-cards-content">
+                                    <h1>VC-backed DAO startups are racing to define what DAOs actually are</h1>
+                                    <p>Not all 'decentralized autonomous organizations' are autonomous... or decentralized
+                                    </p>
+    
+                                    <div class="about-press-cards-subtext">
+                                        <p>Read more</p>
+                                        <img src="img/grey-arrow.png" alt="greyArrow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- podcasts title and cards showing podcastst and linking to them -->
+                <section>
+                    <div class="about-podcasts-title lato">
+                        <h1>Podcasts</h1>
+                    </div>
+                    <div class="about-podcasts">
+                        <div class="about-podcasts-cards">
+                            <div class="about-podcasts-card-pump about-podcast-card">
+                                <div class="about-podcasts-content">
+                                    <img src="img/pump.png" alt="pumpLogo">
+                                    <h1>Understanding DAOs with Yury Lifshits</h1>
+                                    <p>The Pomp Podcast<br>by Anthony Pompliano</p>
+                                    <div class="about-podcasts-subtext">
+                                        <p>Listen</p>
+                                        <img src="img/white-arrow.png" alt="whiteArrow">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="about-podcasts-card-unstopable about-podcast-card">
+                                <div class="about-podcasts-content">
+                                    <img src="img/unstopable.png" alt="unstoppableLogo">
+                                    <h1>Everything You Need to Know About DAOs with Yury Lifshits from Superdao</h1>
+                                    <p>The Unstoppable Podcast<br>by Josh Gordon</p>
+                                    <div class="about-podcasts-subtext">
+                                        <p>Watch</p>
+                                        <img src="img/white-arrow.png" alt="whiteArrow">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="about-podcasts-card-zima about-podcast-card">
+                                <div class="about-podcasts-content">
+                                    <img src="img/zima.png" alt="zimaLogo">
+                                    <h1>Yury Lifshits - Superdao: The “Shopify” for DAOs</h1>
+                                    <p>Zima Red<br>by Andrew Stainwold</p>
+                                    <div class="about-podcasts-subtext">
+                                        <p>Listen</p>
+                                        <img src="img/white-arrow.png" alt="whiteArrow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </section>
+        </section>
+    </main>
+
+    <section>
+        <!-- footer with links and socials buttons -->
+        <footer class="flex-row-wrap-evenly-centre footer-content">
+            <div class="footer-links montserrat">
+                <div><a href="">About</a></div>
+                <div><a href="">Legal</a></div>
+                <div><a href="">Jobs</a></div>
+            </div>
+            <div class="footer-buttons flex-row-wrap-evenly-centre">
+                <div><img src="img/twitter.png" alt="twitter-logo"></div>
+                <div><img src="img/telegram.png" alt="telegram-logo"></div>
+                <div><img src="img/youtube.png" alt="youtube-logo"></div>
+                <div><img src="img/discord.png" alt="discord-logo"></div>
+            </div>
+        </footer>
+</section>
 </body>
 
 </html
